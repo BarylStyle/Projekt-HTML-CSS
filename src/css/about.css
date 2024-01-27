@@ -1,0 +1,32 @@
+.about-title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.flex-about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text {
+  width: 288px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
