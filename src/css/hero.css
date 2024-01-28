@@ -1,0 +1,55 @@
+.hero-section {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 44px;
+}
+.hero-elements-flex {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 167px;
+  top: 174px;
+}
+.hero-title {
+  width: 46px;
+  height: 34px;
+  font-family: 'montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+.hero-main-title {
+  font-family: 'montserrat', sans-serif;
+  font-size: 52px;
+  line-height: 63.39px;
+  text-align: center;
+  position: absolute;
+  top: 291px;
+}
+.shop-svg {
+  width: 64px;
+  height: 76px;
+}
+.shop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 76px;
+  background-color: transparent;
+  border: none;
+}
+
+.hero-background {
+  width: 145px;
+  height: 274px;
+  background-image: url(../images/flower_homepage@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 226px;
+}
