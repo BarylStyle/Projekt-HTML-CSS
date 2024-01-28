@@ -82,6 +82,11 @@
     width: 344px;
     height: 399px;
   }
+  .btn-order-style {
+    height: 64px;
+    padding: 16px 32px;
+  }
+
   .store-wrapper {
     max-width: 768px;
   }
