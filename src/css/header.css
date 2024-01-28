@@ -58,6 +58,9 @@
   background-color: transparent;
   border: none;
 }
+.close-icon {
+  stroke: var(--white);
+}
 .mobile-menu {
   font-family: 'montserrat', sans-serif;
   font-size: 20px;
@@ -95,5 +98,16 @@
   .phone {
     width: 22px;
     height: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-link {
+    color: var(--white);
+  }
+  .logo {
+    fill: var(--white);
+  }
+  .phone {
+    fill: var(--white);
   }
 }
