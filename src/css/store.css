@@ -60,6 +60,14 @@
   gap: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn-order-style:hover {
+  background-color: #e25b41;
+}
+.btn-order-style:focus {
+  background-color: #fa6f54;
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+}
+
 .order-flower-box {
   display: flex;
   flex-direction: column;
@@ -92,7 +100,10 @@
   .store-item-price {
     font-size: 24px;
   }
-
+  .btn-order-style {
+    height: 64px;
+    padding: 16px 32px;
+  }
   .line-store {
     width: 50px;
     height: 1px;
@@ -110,8 +121,7 @@
   .store-wrapper {
     max-width: 1220px;
   }
-  .store-item-name {
-  }
+
   .line-wrap {
     display: flex;
     max-width: 600px;
