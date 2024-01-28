@@ -71,8 +71,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 25px;
-    row-gap: 72px;
     columns: 2;
   }
 }
