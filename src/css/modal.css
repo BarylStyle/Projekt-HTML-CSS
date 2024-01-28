@@ -31,23 +31,15 @@
 }
 
 .close-button {
-<<<<<<< Updated upstream
-=======
   display: flex;
   align-items: center;
   justify-content: center;
->>>>>>> Stashed changes
   position: absolute;
   top: 14px;
   right: 14px;
   width: 18px;
   height: 18px;
-<<<<<<< Updated upstream
-
-  background-color: transparent;
-=======
   background-color: black;
->>>>>>> Stashed changes
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -69,11 +61,7 @@
 }
 
 .contact-modal {
-<<<<<<< Updated upstream
-  margin-bottom: 8px;
-=======
   margin-bottom: 18px;
->>>>>>> Stashed changes
 }
 
 .title-contact-modal {
@@ -104,10 +92,7 @@
   font-weight: 500;
   line-height: normal;
   outline: transparent;
-<<<<<<< Updated upstream
-=======
   border: none;
->>>>>>> Stashed changes
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
