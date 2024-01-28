@@ -10,7 +10,7 @@
 .header-flex {
   display: flex;
   padding-top: 16px;
-  margin-bottom: 16px;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -41,6 +41,7 @@
   padding: 32px;
   transform: translateX(100%);
   background-color: var(--pink);
+  z-index: 1;
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -56,6 +57,9 @@
   height: 24px;
   background-color: transparent;
   border: none;
+}
+.close-icon {
+  stroke: var(--white);
 }
 .mobile-menu {
   font-family: 'montserrat', sans-serif;
@@ -94,5 +98,16 @@
   .phone {
     width: 22px;
     height: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-link {
+    color: var(--white);
+  }
+  .logo {
+    fill: var(--white);
+  }
+  .phone {
+    fill: var(--white);
   }
 }

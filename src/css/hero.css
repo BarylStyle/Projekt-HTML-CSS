@@ -1,35 +1,37 @@
 .hero-section {
-  margin-bottom: 100px;
+  margin-top: 44px;
   text-align: center;
+  margin-bottom: 100px;
 }
 .hero-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 44px;
 }
 .hero-elements-flex {
   display: flex;
   align-items: center;
   position: absolute;
   gap: 167px;
-  top: 174px;
+  top: 92px;
 }
 .hero-title {
   width: 46px;
   height: 34px;
   font-family: 'montserrat', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17.07px;
 }
 .hero-main-title {
   font-family: 'montserrat', sans-serif;
   font-size: 52px;
+  font-weight: 400;
   line-height: 63.39px;
   text-align: center;
   position: absolute;
-  top: 291px;
+  top: 247px;
 }
 .shop-svg {
   width: 64px;
@@ -39,8 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 64px;
-  height: 76px;
+
   background-color: transparent;
   border: none;
 }
@@ -52,4 +53,81 @@
   background-size: cover;
   background-position: center;
   border-radius: 226px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: url(../images/flower_homepage@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    margin-top: 36px;
+  }
+  .hero-background {
+    width: 390px;
+    height: 636px;
+  }
+  .hero-elements-flex {
+    top: 262px;
+    gap: 480px;
+  }
+  .hero-main-title {
+    font-size: 120px;
+    line-height: 146.28px;
+    top: 584px;
+  }
+  .shop-svg {
+    width: 145px;
+    height: 150px;
+  }
+  .hero-title {
+    font-size: 24px;
+    line-height: 29.26px;
+    width: 76px;
+    height: 58px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-background {
+    display: none;
+  }
+  .header-flex {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .hero-section {
+    margin-top: 0px;
+    width: 100%;
+    height: 878px;
+    background-image: url(../images/flower_homepage@1x.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 76px;
+  }
+  .hero-elements-flex {
+    top: 555px;
+    gap: 725px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--white);
+  }
+  .hero-main-title {
+    top: 328px;
+    color: var(--white);
+    font-size: 160px;
+    line-height: 195px;
+  }
+  .shop-svg {
+    width: 166px;
+    height: 166px;
+    fill: var(--white);
+  }
 }
