@@ -94,6 +94,11 @@
   .hero-background {
     display: none;
   }
+  .header-flex {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
   .hero-section {
     margin-top: 0px;
     width: 100%;
@@ -104,5 +109,25 @@
     background-repeat: no-repeat;
     position: relative;
     bottom: 76px;
+  }
+  .hero-elements-flex {
+    top: 555px;
+    gap: 725px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--white);
+  }
+  .hero-main-title {
+    top: 328px;
+    color: var(--white);
+    font-size: 160px;
+    line-height: 195px;
+  }
+  .shop-svg {
+    width: 166px;
+    height: 166px;
+    fill: var(--white);
   }
 }
