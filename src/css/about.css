@@ -96,9 +96,10 @@
 }
 
 .flex-about {
+  flex-direction: row;
+  gap: 90px;
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .about-text {
