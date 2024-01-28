@@ -10,7 +10,7 @@
 .header-flex {
   display: flex;
   padding-top: 16px;
-  margin-bottom: 16px;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -41,6 +41,7 @@
   padding: 32px;
   transform: translateX(100%);
   background-color: var(--pink);
+  z-index: 1;
 }
 .menu-container.is-open {
   transform: translateX(0);
