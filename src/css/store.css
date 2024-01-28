@@ -96,10 +96,9 @@
   .line-store {
     width: 50px;
     height: 1px;
-    background-color: black;
+    background-color: #000;
   }
 }
-
 @media screen and (min-width: 1158px) {
   .flex-store {
     columns: 2;
@@ -112,7 +111,6 @@
     max-width: 1220px;
   }
   .store-item-name {
-    width: 100%;
   }
   .line-wrap {
     display: flex;
@@ -123,12 +121,10 @@
     height: 542px;
   }
 
-  .line-store {
-    width: 100%;
-    height: 1px;
-  }
-
   .store-item-price {
     font-size: 28px;
+  }
+  .line-store {
+    width: 100%;
   }
 }

@@ -59,10 +59,7 @@
     margin: auto;
     max-width: 730px;
   }
-  .line {
-    width: 538px;
-    height: 1px;
-  }
+
   .about-text {
     font-size: 20px;
     padding-top: 26px;
@@ -73,10 +70,6 @@
   }
 }
 @media screen and (min-width: 1158px) {
-  .line {
-    width: 1050px;
-    height: 1px;
-  }
   .about-photo-size {
     width: 632px;
     height: 344px;
