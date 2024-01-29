@@ -1,0 +1,36 @@
+<div class="backdrop is-hidden" contact-data-modal>
+  <div class="contact-modal">
+    <button type="button" class="close-button" contact-modal-close>
+      <svg class="icon-x"><use href="./images/icons.svg#icon-x"></use></svg>
+    </button>
+    <h3 class="contact-title">Contact us</h3>
+    <p class="contact-info">
+      If you have any additional questions or you want to clarify something before you make an order
+      please fill in your contact details. We will call you back.
+    </p>
+    <form id="contact-form">
+      <div class="contact-div-form">
+        <label for="user-name" class="contact-label">Name </label>
+        <input
+          type="text"
+          name="username"
+          id="user-name"
+          class="contact-input"
+          placeholder="Kristin Watson"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+        <label for="user-email" class="contact-label">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="user-email"
+          class="email-input contact-input"
+          placeholder="tanya.hill@example.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </div>
+      <button type="submit" class="send-btn" thank-data-modal>Send</button>
+    </form>
+  </div>
+</div>
