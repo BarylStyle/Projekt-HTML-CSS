@@ -78,6 +78,7 @@
 }
 
 .title-modal {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 19px;
   line-height: normal;
@@ -88,6 +89,7 @@
 }
 
 .text-modal {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 12px;
   font-style: normal;

@@ -1,15 +1,23 @@
 (() => {
-  console.log('Skrypt sie zaladowal');
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('[follow-modal-open]'),
+    closeModalBtn: document.querySelector('[follow-modal-close]'),
+    modal: document.querySelector('[follow-data-modal]'),
+    emailInput: document.getElementById('email'),
   };
-
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.emailInput.addEventListener('input', validateEmail);
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  function validateEmail() {
+    const email = refs.emailInput.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(email)) {
+      refs.emailInput.style.borderColor = 'green';
+    } else {
+      refs.emailInput.style.borderColor = 'red';
+    }
+  }
 })();

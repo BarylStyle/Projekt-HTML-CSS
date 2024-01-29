@@ -1,10 +1,8 @@
 .blog-container {
   max-width: 480px;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
   background: white;
 }
 
@@ -29,7 +27,7 @@
   flex-basis: unset;
   list-style: none;
   justify-content: center;
-  gap: 32px;
+  gap: 16px;
   width: 100%;
   align-items: center;
 }
@@ -37,7 +35,8 @@
 .photo-item img {
   display: flex;
   height: auto;
-  max-width: 100%;
+  width: 136px;
+  height: 181px;
 }
 
 .arrow-wrapper {
@@ -45,7 +44,7 @@
   justify-content: center;
   list-style: none;
   gap: 25px;
-  margin: 0;
+  margin-top: 4px;
   margin-bottom: 14px;
 }
 
@@ -59,12 +58,16 @@
 }
 
 .follow {
+  font-family: 'Montserrat', sans-serif;
   color: #000;
   font-size: 18px;
+  font-weight: 500;
   line-height: normal;
+  margin-bottom: 24px;
 }
 
 .button-newsletter {
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -92,4 +95,53 @@
   background: #fa6f54;
   color: white;
   box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .blog-container {
+    max-width: 768px;
+  }
+  .blog-photo-wrapper {
+    gap: 32px;
+  }
+  .photo-item-tree {
+    display: none;
+  }
+  .arrow-wrapper {
+    margin-top: 8px;
+    margin-bottom: 18px;
+  }
+  .follow {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .blog-container {
+    max-width: 1158px;
+  }
+  .photo-item img {
+    width: 390px;
+    height: 421px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    display: flex;
+    height: auto;
+  }
+  .blog-photo-wrapper {
+    gap: 31px;
+
+    display: flex;
+    flex-basis: unset;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .arrow-wrapper {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
 }
