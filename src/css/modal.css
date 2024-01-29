@@ -153,6 +153,17 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-modal-subscribe:hover {
+  background: #e25b41;
+  color: white;
+}
+
+.button-newsletter:focus {
+  background: #fa6f54;
+  color: white;
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192pi), (min-resolution: 2dppx) {
   .layered-background {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
