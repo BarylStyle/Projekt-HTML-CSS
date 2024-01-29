@@ -15,19 +15,14 @@
   align-items: baseline;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 32px;
-  padding-bottom: 20px;
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 .footer-nav {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0;
+  margin: 0;
   width: 128px;
-  margin-bottom: 14px;
 }
 
 .footer-nav-title {
@@ -72,4 +67,19 @@
 
 .footer-social-icon-color {
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+  }
+  .footer-social-position {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-nav {
+  }
+}
+
+@media screen and (min-width: 1158px) {
 }
