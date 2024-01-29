@@ -82,4 +82,10 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .blog-container {
+    max-width: 1158px;
+  }
+  .footer-container {
+    max-width: 1158px;
+  }
 }

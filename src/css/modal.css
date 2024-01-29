@@ -121,7 +121,7 @@
   border: 1px solid #d7d7d7;
 }
 
-.email-input {
+.blog-email-input {
   width: auto;
   height: 100%;
   color: rgba(0, 0, 0, 0.3);
@@ -166,7 +166,7 @@
   box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192pi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .layered-background {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/bouquet-newsletter@2x.jpg');
