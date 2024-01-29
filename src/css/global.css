@@ -52,6 +52,8 @@
   --pink: #e86f54;
   --white: #ffffff;
   --black: #000000;
+  --grey: #5c5c5c;
+  --light-grey: #d7d7d7;
 }
 .container {
   max-width: 767px;
