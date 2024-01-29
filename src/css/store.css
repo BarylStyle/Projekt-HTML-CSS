@@ -1,0 +1,145 @@
+.flex-store {
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 16px;
+  display: flex;
+}
+
+.store-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin: 32px 0;
+}
+
+.store-wrapper {
+  max-width: 420px;
+  margin: auto;
+}
+.store-item-name {
+  color: var(--black);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.store-item-price {
+  color: var(--black);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.btn-order-style {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  background-color: var(--pink);
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-width: 138px;
+  min-height: 24px;
+  border: none;
+  border-radius: 38px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  padding: 14px 28px;
+  gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-order-style:hover {
+  background-color: #e25b41;
+}
+.btn-order-style:focus {
+  background-color: #fa6f54;
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+}
+
+.order-flower-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .store-photo-size {
+    width: 344px;
+    height: 399px;
+  }
+  .btn-order-style {
+    height: 64px;
+    padding: 16px 32px;
+  }
+
+  .store-wrapper {
+    max-width: 768px;
+  }
+  .store-item-name {
+    width: 100%;
+    height: 68px;
+    font-size: 36px;
+  }
+
+  .line-wrap {
+    align-items: center;
+    display: flex;
+    max-width: 344px;
+    justify-content: space-between;
+  }
+  .store-item-price {
+    font-size: 24px;
+  }
+  .btn-order-style {
+    height: 64px;
+    padding: 16px 32px;
+  }
+  .line-store {
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .flex-store {
+    columns: 2;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .store-wrapper {
+    max-width: 1220px;
+  }
+
+  .line-wrap {
+    display: flex;
+    max-width: 600px;
+  }
+  .store-photo-size {
+    width: 600px;
+    height: 542px;
+  }
+
+  .store-item-price {
+    font-size: 28px;
+  }
+  .line-store {
+    width: 100%;
+  }
+}

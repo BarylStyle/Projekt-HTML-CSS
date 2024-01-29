@@ -1,7 +1,10 @@
-<section>
-  <h2>About</h2>
-  <div>
-    <p>
+<section id="about" class="container">
+  <div class="about-section">
+    <h2 class="about-title">About</h2>
+    <div class="line-section"></div>
+  </div>
+  <div class="flex-about">
+    <p class="about-text">
       We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give
       people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is
       unique as you are.
@@ -11,59 +14,81 @@
       alt="two flowers"
       width="288"
       height="178"
-      srcset="./images/flowers1@1x.jpg 1x, ./images/flowers1@2x.jpg 2x"
+      srcset="./images/flowers1@2x.jpg 2x"
+      class="about-photo-size"
     />
   </div>
 </section>
-<section>
-  <h2>Store</h2>
-  <div>
-    <ul>
-      <li>
+<section id="store" class="container">
+  <div class="store-section">
+    <h2 class="about-title">Store</h2>
+    <div class="line-section"></div>
+  </div>
+  <div class="store-wrapper">
+    <ul class="list flex-store">
+      <li class="service-item">
         <img
           src="./images/bouquet1@1x.jpg"
           alt="first bouquet of flowers"
           width="136"
           height="155"
-          srcset="./images/bouquet1@1x.jpg 1x, ./images/bouquet1@2x.jpg 2x"
+          srcset="./images/bouquet1@2x.jpg 2x"
+          class="store-photo-size"
         />
-        <h3>compliments</h3>
-        <p>from $15</p>
+        <div class="line-wrap">
+          <h3 class="store-item-name">compliments</h3>
+          <div class="line-store"></div>
+        </div>
+        <p class="store-item-price">from $15</p>
       </li>
-      <li>
+      <li class="service-item">
         <img
           src="./images/bouquet2@1x.jpg"
           alt="second bouquet of flowers"
           width="136"
           height="155"
-          srcset="./images/bouquet2@1x.jpg 1x, ./images/bouquet2@2x.jpg 2x"
+          srcset="./images/bouquet2@2x.jpg 2x"
+          class="store-photo-size"
         />
-        <h3>bouquets size S</h3>
-        <p>from $25</p>
+        <div class="line-wrap">
+          <h3 class="store-item-name">bouquets size S</h3>
+          <div class="line-store"></div>
+        </div>
+        <p class="store-item-price">from $25</p>
       </li>
-      <li>
+      <li class="service-item">
         <img
           src="./images/bouquet3@1x.jpg"
           alt="thierd bouquet of flowers"
           width="136"
           height="155"
-          srcset="./images/bouquet3@1x.jpg 1x, ./images/bouquet3@2x.jpg 2x"
+          srcset="./images/bouquet3@2x.jpg 2x"
+          class="store-photo-size"
         />
-        <h3>bouquets size M</h3>
-        <p>from $45</p>
+        <div class="line-wrap">
+          <h3 class="store-item-name">bouquets size M</h3>
+          <div class="line-store"></div>
+        </div>
+        <p class="store-item-price">from $45</p>
       </li>
-      <li>
+      <li class="service-item">
         <img
           src="./images/bouquet4@1x.jpg"
           alt="fourth bouquet of flowers"
           width="136"
           height="155"
-          srcset="./images/bouquet4@1x.jpg 1x, ./images/bouquet4@2x.jpg 2x"
+          srcset="./images/bouquet4@2x.jpg 2x"
+          class="store-photo-size"
         />
-        <h3>bouquets size L</h3>
-        <p>from $60</p>
+        <div class="line-wrap">
+          <h3 class="store-item-name">bouquets size L</h3>
+          <div class="line-store"></div>
+        </div>
+        <p class="store-item-price">from $60</p>
       </li>
     </ul>
   </div>
-  <button type="button">Order flowers</button>
+  <div class="order-flower-box">
+    <button class="btn-order-style" type="button" data-modal-open>Order flowers</button>
+  </div>
 </section>
