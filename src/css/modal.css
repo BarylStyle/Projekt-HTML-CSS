@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  max-width: 272px;
   width: 90%;
   min-height: 380px;
   background: white;
@@ -85,7 +85,8 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: black;
-  margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 14px;
 }
 
 .text-modal {
@@ -95,9 +96,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  margin-bottom: 18px;
 }
 
-.contact-modal {
+.blog-contact-modal {
   margin-bottom: 18px;
 }
 
@@ -108,7 +110,7 @@
   line-height: normal;
   color: #5c5c5c;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .wrapper-email-modal {
@@ -116,9 +118,49 @@
   height: 35px;
   width: auto;
   padding: 10px 159px 10px 12px;
+  margin-bottom: 18px;
   align-items: center;
   border-radius: 4px;
   border: 1px solid #d7d7d7;
+}
+
+.blog-email-input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+.blog-email-input:valid:not(:focus):not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+.error-icon {
+  display: none;
+}
+
+.success-icon {
+  display: none;
+}
+
+.blog-email-input:invalid:not(:focus):not(:placeholder-shown) ~ .icon-Error-logo {
+  display: block;
+}
+
+.blog-email-input:valid:not(:focus):not(:placeholder-shown) ~ .icon-Vector {
+  display: block;
+}
+
+.icon-Error-logo,
+.icon-Vector {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Style dla wyświetlania ikon */
+.icon-Error-logo.visible,
+.icon-Vector.visible {
+  display: block;
 }
 
 .blog-email-input {
@@ -137,6 +179,7 @@
 }
 
 .button-modal-subscribe {
+  font-family: 'Montserrat', sans-serif;
   display: block;
   justify-content: center;
   min-width: 236px;
@@ -160,7 +203,7 @@
   color: white;
 }
 
-.button-newsletter:focus {
+.button-modal-subscribe:focus {
   background: #fa6f54;
   color: white;
   box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
@@ -174,12 +217,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .photo-item {
-    width: 344px;
-    height: 398px;
-  }
   .modal {
     max-width: 588px;
+  }
+  .text-modal {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .title-contact-modal {
+    font-size: 14px;
+  }
+  .blog-email-input {
+    font-size: 14px;
+  }
+  .title-modal {
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
+  .wrapper-email-modal {
+    margin-bottom: 28px;
+  }
+  .button-modal-subscribe {
+    min-width: 336px;
+    width: 100%;
   }
 }
 
@@ -187,10 +248,15 @@
   .modal {
     display: flex;
     align-items: stretch;
+    max-width: 860px;
+    min-height: 528px;
   }
   .modal-header {
     flex-basis: 50%;
     position: relative;
+    background-position: unset;
+    max-width: 860px;
+    min-height: 528px;
   }
   .modal-image {
     height: 100%;
@@ -199,6 +265,14 @@
   }
   .modal-content {
     flex-basis: 50%;
-    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 112px;
+    margin-top: 111px;
+  }
+  .text-modal {
+    margin-bottom: 32px;
+  }
+  .button-modal-subscribe {
   }
 }
