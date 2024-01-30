@@ -30,7 +30,7 @@
 /* ------------MoBILE MENU-------- */
 
 .menu-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -42,12 +42,10 @@
   transform: translateX(100%);
   background-color: var(--pink);
   z-index: 1;
-  
- 
 }
 .menu-container.is-open {
   transform: translateX(0);
-  
+  display: flex;
 }
 .close-btn {
   display: flex;
@@ -81,9 +79,6 @@
 }
 /* ----------STYLE DLA TABLET-------- */
 @media screen and (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
   .nav-flex {
     display: block;
   }
