@@ -117,7 +117,7 @@
 }
 @media screen and (min-width: 1158px) {
   .flex-store {
-    columns: 2;
+    width: 1216px;
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
@@ -125,6 +125,7 @@
   }
   .store-wrapper {
     max-width: 1220px;
+    margin: 0;
   }
 
   .line-wrap {
