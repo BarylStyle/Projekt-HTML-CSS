@@ -42,9 +42,12 @@
   transform: translateX(100%);
   background-color: var(--pink);
   z-index: 1;
+  
+ 
 }
 .menu-container.is-open {
   transform: translateX(0);
+  
 }
 .close-btn {
   display: flex;
