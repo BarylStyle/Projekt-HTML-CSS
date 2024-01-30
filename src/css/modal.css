@@ -84,7 +84,7 @@
   line-height: normal;
   text-align: center;
   letter-spacing: 0.02em;
-  color: black;
+  color: var(--black);
   margin-top: 18px;
   margin-bottom: 14px;
 }
@@ -273,10 +273,8 @@
   .text-modal {
     margin-bottom: 32px;
   }
-  .button-modal-subscribe {
-  }
   .close-button {
     position: absolute;
-    z-index: 10;
+    right: -455px;
   }
 }
