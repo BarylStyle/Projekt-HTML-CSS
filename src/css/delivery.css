@@ -35,6 +35,7 @@
     align-items: center;
         margin-top: 25px;
         line-height: 17.07px;
+        max-width: 995px;
 
 }
 
@@ -61,7 +62,7 @@
 .delivery-photo {
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: -24px;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -88,6 +89,9 @@ min-width: 767px;
     max-width: 1280px;
     width: 100%;
     }
+        .menu-container{
+            display: none;
+        }
     }
 
 
@@ -97,6 +101,7 @@ min-width: 767px;
             font-size: 32px;
             font-weight: 500;
             max-width: 952px;
+            margin-right: 35px;
         }
         .delivery-list-main{
             margin-left: 96px;
@@ -105,9 +110,12 @@ min-width: 767px;
         .img-delivery{
             min-width: 767px;
                 max-width: 1280px;
-                margin-left: -34px;
+              
                     margin-top: 15px;
                         margin-bottom: 30px;
         }
+                .delivery-number{
+                    margin-right: 56px;
+                }
     
 }
