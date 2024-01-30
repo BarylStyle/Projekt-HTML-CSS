@@ -27,6 +27,8 @@
         text-align: left;
         line-height: 1.5;
         list-style: none;
+        max-width: 480px;
+        margin: auto;
     
 }
 
@@ -85,9 +87,17 @@
         line-height:31.69px;
     }
     .img-delivery{
-min-width: 767px;
+    min-width: 767px;
     max-width: 1280px;
     width: 100%;
+    }
+   
+    .delivery-list-main{
+        max-width: 768px;
+        margin: auto;
+    }
+    .delivery-photo{
+        overflow: hidden;
     }
     }
 
@@ -97,7 +107,7 @@ min-width: 767px;
             line-height: 39.01px;
             font-size: 32px;
             font-weight: 500;
-            max-width: 952px;
+            max-width: 993px;
             margin-right: 35px;
         }
         .delivery-list-main{
