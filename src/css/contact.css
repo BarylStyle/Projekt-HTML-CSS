@@ -1,15 +1,25 @@
 .contact-modal {
   padding: 28px 16px;
   position: absolute;
-  top: 50%;
+  top: 8%;
   left: 50%;
+  transform: translateX(-50%);
   background-color: var(--white);
-  width: 95%;
   max-width: 357px;
-  transform: translate(-50%, -50%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .contact-title {
   font-family: 'montserrat', sans-serif;
@@ -39,7 +49,9 @@
 .contact-input {
   width: 100%;
   height: 35px;
-  color: rgba(0, 0, 0, 0.3);
+  font-family: 'montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 14.63px;
   border: 1px solid rgba(215, 215, 215);
   border-radius: 4px;
   background-color: transparent;
@@ -47,17 +59,74 @@
   margin-bottom: 14px;
   outline: transparent;
 }
+input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
 .contact-input:invalid {
   border-color: #f44336;
 }
 .contact-div-form {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 .send-btn {
+  font-family: 'montserrat', sans-serif;
   width: 100%;
   height: 37px;
   border: none;
   border-radius: 8px;
   background-color: var(--pink);
   color: var(--white);
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .contact-modal {
+    padding: 48px 32px;
+    max-width: 511px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact-close-btn {
+    top: 28px;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+  }
+  .contact-title {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 24px;
+  }
+  .contact-info {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 32px;
+  }
+  .contact-label {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contact-input {
+    height: 49px;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-bottom: 24px;
+  }
+  .contact-div-form {
+    margin-bottom: 14px;
+  }
+  .send-btn {
+    height: 50px;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-modal {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
