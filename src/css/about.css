@@ -69,7 +69,7 @@
     height: 217px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .about-photo-size {
     width: 632px;
     height: 344px;

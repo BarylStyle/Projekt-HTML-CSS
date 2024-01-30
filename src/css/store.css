@@ -115,9 +115,9 @@
     background-color: #000;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .flex-store {
-    width: 1216px;
+    min-width: 1280px;
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
