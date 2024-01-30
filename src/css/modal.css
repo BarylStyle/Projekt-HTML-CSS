@@ -275,4 +275,8 @@
   }
   .button-modal-subscribe {
   }
+  .close-button {
+    position: absolute;
+    z-index: 10;
+  }
 }

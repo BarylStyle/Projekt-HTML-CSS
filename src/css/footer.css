@@ -10,20 +10,21 @@
   max-width: 480px;
   display: flex;
   flex-direction: unset;
-  justify-content: space-around;
+  justify-content: space-between;
   column-gap: 44px;
   row-gap: 32px;
-  align-items: baseline;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .footer-nav {
   flex-direction: column;
   justify-content: center;
   padding: 0;
   margin: 0;
-  max-width: 237px;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer-nav-title {
