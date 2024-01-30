@@ -77,10 +77,12 @@
   .about-text {
     font-size: 22px;
     width: 510px;
+    padding: 0;
   }
   .flex-about {
     max-width: 1220px;
-    align-items: center;
+    width: 1158px;
     justify-content: space-between;
+    align-items: center;
   }
 }
