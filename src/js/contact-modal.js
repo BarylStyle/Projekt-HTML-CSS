@@ -1,12 +1,14 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[contact-modal-open]'),
+    openModalBtn2: document.querySelector('[store-modal-open]'),
     closeModalBtn: document.querySelector('[contact-modal-close]'),
     modal: document.querySelector('[contact-data-modal]'),
-    thankYouModal: document.querySelector('[thank-data-modal]'),
+    thankYouModal: document.querySelector('[data-thanks-modal]'),
     contactForm: document.querySelector('#contact-form'), // added form reference
   };
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn2.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
   refs.contactForm.addEventListener('submit', handleFormSubmit);
   function toggleModal() {
