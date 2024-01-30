@@ -6,31 +6,37 @@
     modal: document.querySelector('[contact-data-modal]'),
     thankYouModal: document.querySelector('[data-thanks-modal]'),
     contactForm: document.querySelector('#contact-form'), // added form reference
+    continueBtn: document.querySelector('[data-thanks-modal] .continue-btn'), // added continue button reference
   };
+
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.openModalBtn2.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
   refs.contactForm.addEventListener('submit', handleFormSubmit);
+  refs.continueBtn.addEventListener('click', handleContinueButtonClick); // added event listener for continue button
+
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
+
   function handleFormSubmit(event) {
     event.preventDefault();
-    // Validate form data here (you can use the pattern attribute for basic validation)
     const isValid = validateFormData();
     if (isValid) {
-      // If the form is valid, close the contact modal and open the thank you modal
       toggleModal();
       refs.thankYouModal.classList.remove('is-hidden');
     }
   }
+
+  function handleContinueButtonClick() {
+    refs.thankYouModal.classList.add('is-hidden'); // Hide the thanks modal
+  }
+
   function validateFormData() {
     // Implement your validation logic here
-    // You can use the pattern attribute for basic validation
-    // Add red highlighting for validation errors
     const nameInput = document.getElementById('user-name');
     let isValid = true;
-    // Loop through all email inputs with the class 'email-input'
+
     const emailInputs = document.querySelectorAll('.email-input');
     emailInputs.forEach(emailInput => {
       if (!emailInput.checkValidity()) {
@@ -40,12 +46,14 @@
         emailInput.classList.remove('is-invalid');
       }
     });
+
     if (!nameInput.checkValidity()) {
       isValid = false;
       nameInput.classList.add('is-invalid');
     } else {
       nameInput.classList.remove('is-invalid');
     }
+
     return isValid;
   }
 })();
