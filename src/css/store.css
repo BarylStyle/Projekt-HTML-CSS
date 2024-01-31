@@ -108,7 +108,7 @@
   .store-item-name ::before {
     content: '';
     width: 600px;
-    background-color: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
     position: absolute;
     top: 60%;
     right: 100%;
@@ -140,11 +140,6 @@
     height: 64px;
     padding: 16px 32px;
   }
-  .line-store {
-    width: 50px;
-    height: 1px;
-    background-color: #000;
-  }
 }
 @media screen and (min-width: 1280px) {
   .flex-store {
@@ -172,8 +167,5 @@
 
   .store-item-price {
     font-size: 28px;
-  }
-  .line-store {
-    width: 100%;
   }
 }
