@@ -153,29 +153,6 @@ input::placeholder {
   border-color: #e74a3b;
 }
 
-.error-icon {
-  display: none;
-}
-
-.success-icon {
-  display: none;
-}
-
-.icon-Error-logo,
-.icon-Vector {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Style dla wyświetlania ikon */
-.icon-Error-logo.visible,
-.icon-Vector.visible {
-  display: block;
-}
-
 .button-modal-subscribe {
   font-family: 'Montserrat', sans-serif;
   display: block;
@@ -270,7 +247,7 @@ input::placeholder {
   }
   .modal-content {
     flex-basis: 50%;
-    margin: 105px 20px;
+    margin: 90px 20px;
   }
   .text-modal {
     margin-bottom: 32px;
