@@ -14,7 +14,7 @@
         box.
       </p>
 
-      <form name="signup_form" autocomplete="on">
+      <form name="signup-form" autocomplete="on">
         <div class="blog-contact-modal">
           <label for="email" class="title-contact-modal"> Email</label>
           <div class="wrapper-email-modal">
@@ -24,6 +24,7 @@
               id="email"
               placeholder="Your email"
               class="blog-email-input"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
             <span class="email-icon icon-Error-logo">
