@@ -15,6 +15,12 @@
 
 .blog-title {
   margin-right: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 14px;
 }
 
 .line {
@@ -120,6 +126,7 @@
   }
   .blog-title {
     margin-right: 16px;
+    font-size: 44px;
   }
   .blog-photo-wrapper {
     gap: 32px;
