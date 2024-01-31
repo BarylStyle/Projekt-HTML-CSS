@@ -59,11 +59,27 @@
   margin-bottom: 14px;
   outline: transparent;
 }
+.contact-input-container {
+  position: relative;
+}
+.error-state-icon,
+.ok-state-icon {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
 input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.contact-input:invalid {
+.contact-input:hover {
+  border-color: rgba(1, 1, 1, 0.7);
+}
+.contact-input:not(:placeholder-shown):required:invalid {
   border-color: #f44336;
+}
+.contact-input:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
 }
 .contact-div-form {
   margin-bottom: 10px;
