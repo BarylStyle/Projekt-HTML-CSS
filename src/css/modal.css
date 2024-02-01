@@ -51,7 +51,7 @@
   background-size: contain;
 }
 
-.close-button {
+.blog-close-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,8 +280,7 @@ input::placeholder {
   .text-modal {
     margin-bottom: 32px;
   }
-  .close-button {
-    position: absolute;
-    right: -440px;
+  .blog-close-button {
+    right: -435px;
   }
 }
